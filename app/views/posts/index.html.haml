@@ -1,0 +1,53 @@
+.flash-box
+  グループを作成しました
+  .wrapper
+    .notice
+
+    .chat-side
+      .side-header
+        .side-header__box
+          .side-header__box__user-name
+            test-user
+          .side-header__box__menu
+            .side-header__box__menu__new-group
+            =link_to "https://instagram.com/", class: "contents__btn contents__btn--twitter" do
+              = fa_icon 'edit'
+            .side-header__box__menu__edit-user
+            =link_to "https://twitter.com/", class: "contents__btn contents__btn--twitter" do
+              = fa_icon 'cog'
+      .groups
+        .group
+          .group__group-name
+            test-group
+          .group__latest-message
+            さようなら
+
+    .chat-main
+      .main-header
+        .main-header__left-box
+          .main-header__left-box__current-group
+            test-groups
+          .main-header__left-box__member-list
+            Member : 
+        .main-header__edit-btn
+          Edit
+      .messages
+        .message
+          .message__upper-info
+            .message__upper-info__talker
+              test-user
+            .message__upper-info__date
+              2019/10/29(Tue) 16:00:00
+          .message__text
+            こんにちは！
+      .form
+        .new_message
+          .input-box
+            .input-box__text
+              type a message
+            %label.input-box__image{:for => "message_image"}
+              %i.fa.fa-image
+              %input#message_image.input-box__image__file{:name => "message[image]", :type => "file"}/
+          .submit-btn
+            Send
+
