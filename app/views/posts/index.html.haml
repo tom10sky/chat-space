@@ -45,9 +45,9 @@
           .input-box
             .input-box__text
               type a message
-            %label.input-box__image{:for => "message_image"}
-              %i.fa.fa-image
-              %input#message_image.input-box__image__file{:name => "message[image]", :type => "file"}/
+            %label.input-box__image
+              = fa_icon 'picture-o', class: 'icon'
+              %input.message_image.input-box__image__file{type: 'file'}
           .submit-btn
             Send
 

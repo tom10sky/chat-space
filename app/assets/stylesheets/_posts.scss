@@ -3,7 +3,7 @@
   width: 100%;
   background-color: #fafafa;
 }
-
+  
   .flash-box {
     width: 100%;
     color: white;
@@ -12,17 +12,12 @@
     text-align: center;
     background-color: #38aef0;
   }
-  
-  .wrapper {
-
-  }
 
     .notice {
       background-color: #38aef0;
     }
 
-
-    .chat-side {
+      .chat-side {
       width: 300px;
       float: left;
       color: white;
@@ -34,22 +29,17 @@
         display: flex;
         align-items: center;
         padding: 0 20px;
-      }
-
-        .side-header__box {
+        &__box {
           display: flex;
           justify-content: space-between;
           width: 100%;
           font-weight: bold;
-        }
-
-            .side-header__box__user-name {
+            &__box__user-name {
               font-size: 16px;
               margin-block-start: 1em;
               margin-block-end: 1em;
             }
-            
-          .side-header__box__menu {
+          &__menu {
             display: flex;
             list-style: none;
             margin-block-start: 1em;
@@ -59,9 +49,7 @@
             padding-inline-start: 40px;
             font-weight: bold;
             color: white;
-          }
-
-            .side-header__box__menu__new-group {
+            &__new-group {
               margin-left: 0.3rem;
               display: list-item;
               text-align: -webkit-match-parent;
@@ -70,8 +58,7 @@
               color: white;
               cursor: pointer;
             }
-
-            .side-header__box__menu__edit-user {
+            &__edit-user {
               margin-left: 0.3rem;
               display: list-item;
               text-align: -webkit-match-parent;
@@ -81,29 +68,31 @@
               color: white;
               cursor: pointer;
             }
+            
+          }
+        }
+      }
+      
 
       .groups {
         height: calc(100vh - 140px);
         background-color: #2f3e51;
         padding: 20px;
-      }
-      
         .group {
           margin-bottom: 40px;
           text-align: left;
           margin-bottom: 40px;
-        }
-          
-          .group__group-name{
+          &__group-name{
             font-size: 15px;
             margin-bottom: 5px;
             cursor: pointer;
           }
-            
-          .group__latest-message {
+          &__latest-message {
             font-size: 11px;
             cursor: pointer;
           }
+        }
+      }
 
     .chat-main {
       height: 100%;
@@ -118,26 +107,21 @@
         display: flex;
         justify-content: space-between;
         border-bottom: solid 1px #eeeeee;
-      }
-
-        .main-header__left-box {
+        &__left-box {
           margin-top: 35px
         }
-
-          .main-header__left-box__current-group {
+          &__left-box__current-group {
             font-size: 20px;
             color: #333333;
             margin-bottom: 15px;
             font-weight: normal;
           }
-
-          .main-header__left-box__member-list {
+          &__left-box__member-list {
             display: flex;
             font-size: 12px;
             color: #999999;
           }
-
-        .main-header__edit-btn {
+        &__edit-btn {
           height: 40px;
           line-height: 40px;
           padding: 0 20px;
@@ -147,6 +131,8 @@
           right: 40px;
           cursor: pointer;
         }
+      }
+        
 
       .messages {
         height: calc(100vh - 282px);
@@ -157,18 +143,16 @@
 
         .message {
           padding-bottom: 40px;
-        }
-
-          .message__upper-info {
+          &__upper-info {
             margin-bottom: 10px;
             display: flex;
           }
-
+        }
+        
             .message__upper-info__talker {
               color: #434a54;
               font-weight: bold;
             }
-
             .message__upper-info__date {
               color: #999999;
               font-size: 12px;
@@ -196,9 +180,7 @@
             position: relative;
             width: 100%;
             background-color: white;
-          }
-
-            .input-box__text {
+            &__text {
               height: 100%;
               width: calc(100% - 50px);
               padding: 0 40px 0 10px;
@@ -206,8 +188,7 @@
               text-align: left;
               line-height: 50px;
             }
-
-            .input-box__image {
+            &__image {
               height: 0px;
               width: 22.3px;
               font-size: 1.3rem;
@@ -217,6 +198,7 @@
               line-height: 50px;
               cursor: pointer;
             }
+          }
 
               .fa.fa-image {
                 height: calc(40px - 100% - 40px);
@@ -239,6 +221,3 @@
             line-height: 50px;
             cursor: pointer;
           }
-
-
-
