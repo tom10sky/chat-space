@@ -180,6 +180,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   font-awesome-rails
   haml-rails (>= 1.0, <= 2.0.1)
+
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
