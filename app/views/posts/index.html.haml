@@ -4,23 +4,7 @@
     .notice
 
     .chat-side
-      .side-header
-        .side-header__box
-          .side-header__box__user-name
-            test-user
-          .side-header__box__menu
-            .side-header__box__menu__new-group
-            =link_to "https://instagram.com/", class: "contents__btn contents__btn--twitter" do
-              = fa_icon 'edit'
-            .side-header__box__menu__edit-user
-            =link_to "https://twitter.com/", class: "contents__btn contents__btn--twitter" do
-              = fa_icon 'cog'
-      .groups
-        .group
-          .group__group-name
-            test-group
-          .group__latest-message
-            さようなら
+      = render 'devise/shared/chat-side'
 
     .chat-main
       .main-header
