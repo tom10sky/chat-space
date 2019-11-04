@@ -118,6 +118,7 @@
           color: #38aef0;
           border: solid 1px #38aef0;
           right: 40px;
+          text-decoration: none;
           cursor: pointer;
         }
       }
@@ -128,6 +129,7 @@
         background-color: #fafafa;
         padding: 46px 40px;
         text-align: left;
+        overflow: scroll;
       }
 
         .message {
