@@ -3,8 +3,6 @@
   width: 100%;
   background-color: #fafafa;
 }
-  
-  
 
       .chat-side {
       width: 300px;
@@ -167,42 +165,35 @@
           display: flex;
         }
 
-          .input-box {
+          .form__message {
             position: relative;
             width: 100%;
             background-color: white;
-            &__text {
-              height: 100%;
-              width: calc(100% - 50px);
-              padding: 0 40px 0 10px;
-              color: #434a54;
-              text-align: left;
-              line-height: 50px;
+            height: 100%;
+            padding: 0 40px 0 10px;
+            color: #434a54;
+            text-align: left;
+            line-height: 50px;
             }
-            &__image {
-              height: 0px;
-              width: 22.3px;
-              font-size: 1.3rem;
-              position: absolute;
-              top: 0px;
-              right: 10px;
-              line-height: 50px;
-              cursor: pointer;
-            }
-          }
 
-              .fa.fa-image {
+            .input-box{
+              width: 22.3px;
+              height: 0;
+            }
+              .icon {
                 height: calc(40px - 100% - 40px);
-                width: 22.3px;
                 line-height: 50px;
+                font-size: 1.3rem;
+                cursor: pointer;
               }
 
-                .input-box__image__file {
-                  height: 0%;
-                  width: 0%;
-                }
+              .hidden {
+                height: 0%;
+                width: 0%;
+              }
+              
 
-          .submit-btn {
+          .form__submit {
             height: 50px;
             width: 100px;
             padding: 0px 30px;
