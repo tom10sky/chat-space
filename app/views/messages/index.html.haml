@@ -12,8 +12,9 @@
             = @group.name
           .main-header__left-box__member-list
             Member : 
-            = current_user.name
-        = link_to 'Edit', edit_group_path(@group),class: 'main-header__edit-btn'
+            - @group.group_users.each do |group_user|
+              = group_user.user.name
+        = link_to 'Edit', edit_group_path(@group),class: 'main-header__edit-btn',data: {"turbolinks" => false}
       .messages
         = render @messages
 
