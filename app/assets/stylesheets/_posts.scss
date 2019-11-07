@@ -59,12 +59,19 @@
           }
         }
       }
-      
+
+      .fa-edit:before {
+        color: white;
+      }
+      .fa-cog:before {
+        color: white;
+      }
 
       .groups {
         height: calc(100vh - 140px);
         background-color: #2f3e51;
         padding: 20px;
+        a{text-decoration: none;}
         .group {
           margin-bottom: 40px;
           text-align: left;
@@ -72,10 +79,13 @@
           &__group-name{
             font-size: 15px;
             margin-bottom: 5px;
+            color: white;
+            text-decoration: none;
             cursor: pointer;
           }
           &__latest-message {
             font-size: 11px;
+            color: white;
             cursor: pointer;
           }
         }
