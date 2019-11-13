@@ -10,6 +10,10 @@
       color: white;
     }
 
+      .side-header__box__user-name {
+        line-height: 56px;
+      }
+
       .side-header {
         height: 100px;
         background-color: #253141;
@@ -164,52 +168,41 @@
             margin-bottom: 10px;
           }
       
-      .form {
-        height: 50px;
-        padding: 20px 40px;
-        background-color: #ddd
-      }
-
-        .new_message {
-          height: 50px;
-          display: flex;
-        }
-
-          .form__message {
-            position: relative;
-            width: 100%;
-            background-color: white;
-            height: 100%;
-            padding: 0 40px 0 10px;
-            color: #434a54;
-            text-align: left;
-            line-height: 50px;
+          .form {
+            background-color: #DDDDDD;
+            box-sizing: border-box;
+            height: 90px;
+            padding: 20px 50px 20px 40px;
+            &__message {
+              border: none;
+              float: left;
+              height: 50px;
+              width: calc(100% - 160px);
+              padding-left: 10px;
             }
-
-            .input-box{
-              width: 22.3px;
-              height: 0;
-            }
-              .icon {
-                height: calc(40px - 100% - 40px);
+            &__mask {
+              background-color: white;
+              float: left;
+              height: 50px;
+              padding-right: 10px;
+              line-height: 50px;
+              &__image {
+                font-size: 20px;
                 line-height: 50px;
-                font-size: 1.3rem;
-                cursor: pointer;
               }
-
               .hidden {
-                height: 0%;
-                width: 0%;
+                display: none;
               }
-              
-
-          .form__submit {
-            height: 50px;
-            width: 100px;
-            padding: 0px 30px;
-            margin-left: 15px;
-            background-color: #38aef0;
-            color: white;
-            line-height: 50px;
-            cursor: pointer;
+            }
+            &__submit {
+              background-color: #38aef0;
+              border: none;
+              color: white;
+              float: right;
+              font-size: 16px;
+              height: 50px;
+              margin-left: 15px;
+              padding: 0 30px;
+            }
           }
+
